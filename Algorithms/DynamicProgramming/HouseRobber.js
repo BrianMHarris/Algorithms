@@ -2,6 +2,8 @@ const houses = [2, 1, 5, 6, 3, 4, 8, 2, 3];
 
 // determine the highest value you can possibly steal
 // can't steal from houses next to one another
+// Time Complexity: O(n)
+// Space Complexity: O(n) - could probably be done in-place, O(1)
 function stealArr(input) {
   let copy = input.slice();
   let max = copy[0];
